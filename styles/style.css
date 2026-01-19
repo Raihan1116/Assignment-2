@@ -1,0 +1,102 @@
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #1A0B2E;
+    max-width: 100%;
+}
+
+/* -----Nav----- */
+nav{
+    border: 2px solid red;
+    color: white;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffff25;
+}
+nav .wave-text{
+    background: linear-gradient(
+        90deg,
+        #ff4ecd,
+        #b26bff,
+        #ffb347
+    );
+    background-clip: text;
+    color: transparent;
+}
+div .menu{
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    font-size: 13px;
+}
+.menu a{
+    text-decoration: none;
+    color: #ffff;
+}
+nav div .primary-btn {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg,#ffb347, #ff5f9e, #7f5cff);
+    color: #ffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+nav div button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(255,95,158,0.5);
+}
+.arrow{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----Responsive----- */
+@media screen and (max-width:576px) {
+    .menu-container, button {
+        display: none;
+    }
+    .arrow{
+        display: inline;
+    }
+    nav h1{
+        width: 137px;
+        height: 20px;
+    }
+    nav{
+        margin: 0 16px;
+    }
+
+    
+}
