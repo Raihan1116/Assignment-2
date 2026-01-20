@@ -8,20 +8,43 @@
     padding: 0;
     box-sizing: border-box;
 }
+img {
+    width: 100%;
+}
 body{
     background: #1A0B2E;
     max-width: 100%;
 }
 
+/* ----Common Style---- */
+.tittle{
+color: #ffff;
+font-size: 50px;
+text-align: center;
+}
+.section-heading{
+    color: #ffff;
+    font-size: 40px;
+    padding-top: 50px;
+    margin-bottom: 8px;
+}
+
+.paragraph{
+    color: #b8b3b3;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+
 /* -----Nav----- */
 nav{
-    border: 2px solid red;
     color: white;
     margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 16px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid #ffffff25;
 }
@@ -45,7 +68,7 @@ div .menu{
     text-decoration: none;
     color: #ffff;
 }
-nav div .primary-btn {
+.primary-btn {
     padding: 12px 18px;
     border: none;
     border-radius: 50px;
@@ -62,13 +85,97 @@ nav div button:hover{
     display: none;
 }
 
+/* ---Banner Section--- */
+#banner{
+    max-width: 100%;
+    background-image: url(../assets/hero-bg.png);
+    background-position: center;
+}
+.banner-container{
+    width: 550px;
+    height: 558px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.img-box{
+    position: relative;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-box .img-a{
+    width: 350px;
+    height: 350px;
+    margin-left: 30px;
+    background: linear-gradient(135deg,#ffb347, #ff5f9e, #7f5cff);
+    border-radius: 1000px;
 
+}
+.img-box .img-b{
+    position: absolute;
+    left: 110px;
+    top: 80px;
+    margin-left: 40px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 100px;
+}
+.sub-btn{
+    padding: 12px 20px;
+    color: #00ff88;
+    border-radius: 20px;
+    background: transparent;
+    border: 1px solid #00ff88;
+}
+.new{
+    color: #ffff;
+    background: #2ecc71;
+    font-size: 18px;
+    padding: 3px 7px;
+    border-radius: 12px;
+    position: absolute;
+    top: 150px;
+    margin-left: 250px;
+}
+/* ---Podcast--- */
 
+#podcast{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.podcast-container{
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
 
-
-
-
-
+}
+.ratio{
+    border-top: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    padding-bottom: 100px;
+}
+.number{
+    color: #00ff88;
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+.count>p{
+    color: #d3c3c3;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+.about{
+    height: 250px;
+    border-bottom: 1px solid #ffffff25;
+}
 
 
 
@@ -84,19 +191,69 @@ nav div button:hover{
 
 /* -----Responsive----- */
 @media screen and (max-width:576px) {
-    .menu-container, button {
+    .menu-container, 
+    .btn-div,
+    .primary-btn {
         display: none;
     }
     .arrow{
         display: inline;
     }
-    nav h1{
-        width: 137px;
-        height: 20px;
+    .img-box h2,.img-box>p{
+        display: flex;
+        width: 100%;
+        text-align: center;
     }
     nav{
         margin: 0 16px;
     }
+    #banner{
+        min-height: 80vh;
+        background-size: contain;
+        background-position: top;
+        background-position-y: 100px ;
+        background-repeat: no-repeat;
+    }
+    .img-box .img-a {
+        margin-top: 40px;
+        margin-left: 50px;
+        width: 200px;
+        height: 200px;
+    }
+    .img-box .img-b{
+        margin-top: -5px;
+        margin-left: -10px;
+        width: 100px;
+        height: 100px;
+    }
+    nav{
+        gap: 200px;
+    }
+    .new{
+        margin-right: 250px;
+    }
+    .primary-btn{
+        display: inline;
+    }
+    .btn{
+        margin: 0 auto;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #podcast{
+        flex-direction: column;
+        margin-top: -300px;
+    }
+    .section-heading{
+        font-size: 30px;
+    }
+    .ratio{
+        flex-wrap: wrap;
+    }
+
+
+    
 
     
 }
