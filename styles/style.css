@@ -224,10 +224,75 @@ nav div button:hover{
     text-align: start;
     
 }
+.facilities img{
+    width: 60px;
+}
 
 /* ---Featured section---- */
 
+.features-container{
+    padding-bottom: 120px;
+}
 
+.videos{
+    display: flex;
+    gap: 30px;
+    padding-top: 40px;
+    text-align: start;
+}
+.video-card{
+    
+    display: grid;
+    gap: 24px;
+    background-color: #250d44;
+   
+}
+.video-text{
+    padding: 24px; 
+}
+.green img{
+    width: 25px;
+}
+
+.green{
+    color: #00ff88;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    gap: 6px;
+    padding-bottom: 24px;
+   
+}
+.alex{
+    display: flex;
+    text-align: start;
+    gap: 24px;
+    background-color: #351165;
+    padding: 24px;
+    border-radius: 40px;
+    
+}
+.alex-text{
+    display: grid;
+    gap: 16px;
+}
+.alex-text h4{
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.social-links{
+    display: inline-flex;
+    gap: 8px;
+}
+.social-links .icon{
+    width: 30px;
+    padding: 3px;
+    border-radius: 50%;
+    background-color: #533c72;
+    border: 1px solid #70045075;
+
+}
 
 
 
@@ -307,7 +372,7 @@ nav div button:hover{
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }    
-    #banner, #podcast, #choosing{
+    #banner, #podcast, #choosing, .features{
         width: 100%;
     }
         
@@ -320,6 +385,19 @@ nav div button:hover{
         width: 98%;
         align-items: center;
         justify-content: center;
+    }
+    .features-container{
+        padding-bottom: 20px;
+    }
+    .features-container .episodes .videos{
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+    }
+    .host .alex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 
