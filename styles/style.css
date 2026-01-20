@@ -177,6 +177,57 @@ nav div button:hover{
     border-bottom: 1px solid #ffffff25;
 }
 
+/* ----Shoose Section---- */
+
+#choosing{
+    max-width: 1600px;
+    background-color: #230e3d;
+}
+.choosing-container, .features-container{
+    max-width: 1200px;
+    width: 75%;
+    
+    margin: 0 auto;
+    text-align: center;
+}
+.facilities{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    margin: 0 auto;
+    gap: 30px;
+    
+    grid-template-areas:
+     "card-1 card-2 card-2"
+     "card-1 card-3 card-3"
+     "card-4 card-4 card-5" 
+    ;
+    padding-top: 40px;
+    padding-bottom: 120px;
+
+}
+.card-1{grid-area: card-1;}
+.card-2{grid-area: card-2;}
+.card-3{grid-area: card-3;}
+.card-4{grid-area: card-4;}
+.card-5{grid-area: card-5;}
+
+.facilities .card-1, .card-2, .card-3, .card-4, .card-5{
+
+    background-color: #351165;
+    border-radius: 40px;
+    color: #ffffff;
+    padding: 40px;
+    display: grid;
+    gap: 16px;
+    
+    text-align: start;
+    
+}
+
+/* ---Featured section---- */
+
+
 
 
 
@@ -216,21 +267,25 @@ nav div button:hover{
     }
     .img-box .img-a {
         margin-top: 40px;
-        margin-left: 50px;
+        margin-left: 100px;
         width: 200px;
         height: 200px;
     }
     .img-box .img-b{
         margin-top: -5px;
-        margin-left: -10px;
+        margin-left: 40px;
         width: 100px;
         height: 100px;
+    }
+    .img-box .tittle{
+        width: 60%;
+        margin: 0 auto;
     }
     nav{
         gap: 200px;
     }
     .new{
-        margin-right: 250px;
+        margin-right: 120px;
     }
     .primary-btn{
         display: inline;
@@ -248,8 +303,23 @@ nav div button:hover{
     .section-heading{
         font-size: 30px;
     }
-    .ratio{
-        flex-wrap: wrap;
+     .ratio{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }    
+    #banner, #podcast, #choosing{
+        width: 100%;
+    }
+        
+    .banner-container, .choosing-container {
+        width: 100%;
+    }
+    .choosing-container .facilities{
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        align-items: center;
+        justify-content: center;
     }
 
 
